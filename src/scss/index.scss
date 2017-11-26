@@ -1,0 +1,23 @@
+@import './normalize';
+@import './variables';
+@import './fonts';
+@import './mixins';
+
+body {
+  font-family: $font-PlayfairDisplay;
+  font-size: $base-font-size;
+  color: $base-font-color;
+}
+
+a {
+  font-family: $font-PlayfairDisplay;
+  font-size: $base-font-size;
+  color: $base-font-color;
+  text-decoration: none;
+}
+
+.fake {
+  background-image: url($base-url + 'img-logo.png'),
+    url($base-url + 'icon-cup-coffee.png'),
+    url($base-url + 'image-brendan-lim.png');
+}
