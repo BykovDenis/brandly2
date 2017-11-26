@@ -5,8 +5,30 @@ html(lang="en")
       title Brandly
     body
       header.main-header
-        .main-header__layout
+        nav.main-nav
+          a.main-nav__lnk(href="/")
+            img.main-nav__logo(src="img/icon-logo.png" width="126" height="34" alt="Brandly")
+          ul.main-nav__items
+            li.main-nav__item
+              a.main-nav__lnk(href="#") Home
+            li.main-nav__item
+              a.main-nav__lnk(href="#") Shop
+            li.main-nav__item
+              a.main-nav__lnk(href="#") Brands
+            li.main-nav__item
+              a.main-nav__lnk(href="#") Blog
+            li.main-nav__item
+              a.main-nav__lnk(href="#") About
+            li.main-nav__item
+              a.main-nav__lnk(href="#") Contact
       main.main
+        .slider
+          .slide
+            .slide__card
+              p.slide__row1 Spring / Summer Collection
+              p.slide__row2 Up to 60% discount on new arrivals
+              p.slide__row3 TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD
+              a.slide__btn(href="/") Shop now
         .main__layout
       footer.main-footer
         .main-footer__layout

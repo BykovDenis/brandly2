@@ -1,0 +1,65 @@
+.slide {
+  min-height: 930px;
+  width: 100%;
+  background: $color-gray url($base-url + 'bg-main.jpg') 50% 50% no-repeat;
+  background-size: 1920px 930px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(34, 37, 51, .4);
+  }
+  &__card {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    min-height: 300px;
+  }
+  &__row1 {
+    margin: 0;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: .63;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+  }
+  &__row2 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: .32;
+    text-transform: uppercase;
+  }
+  &__row3 {
+    margin: 0;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  &__btn {
+    width: 196px;
+    border: 2px solid $menu-color-link-active;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: $base-font-size;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: $base-font-color-inverse;
+    text-align: center;
+    padding: 18.5px 0;
+  }
+}

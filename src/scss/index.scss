@@ -3,21 +3,28 @@
 @import './fonts';
 @import './mixins';
 
+@import './blocks/main-header';
+@import './blocks/main-nav';
+@import './blocks/slider';
+@import './blocks/slide';
+
 body {
-  font-family: $font-PlayfairDisplay;
+  font-family: $font-opensans;
   font-size: $base-font-size;
   color: $base-font-color;
+  width: 100%;
 }
 
 a {
-  font-family: $font-PlayfairDisplay;
+  font-family: $font-opensans;
   font-size: $base-font-size;
   color: $base-font-color;
   text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .fake {
-  background-image: url($base-url + 'img-logo.png'),
-    url($base-url + 'icon-cup-coffee.png'),
-    url($base-url + 'image-brendan-lim.png');
+  background-image: url($base-url + 'icon-logo.png');
 }

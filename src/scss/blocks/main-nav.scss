@@ -1,0 +1,28 @@
+.main-nav {
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%);
+  width: 1170px;
+  margin: 0 auto;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  &__items {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+  &__item {
+    margin-left: 70px;
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+  &__lnk {
+    color: $base-font-color-inverse;
+  }
+}
