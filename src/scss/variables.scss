@@ -4,12 +4,13 @@ $color-gray: #97989d;
 $color-black: #333333;
 $color-white: #ffffff;
 $color-blue: #222533;
+$color-red: #dc0000;
 
 $font-opensans: 'Open Sans', sans-serif;
 $font-lato: 'Lato', Arial, sans-serif;
 $base-font-size: 18px;
 $font-size-h1: 48px;
-$font-size-h2: 32px;
+$font-size-h2: 40px;
 $font-size-h3: 20px;
 $base-font-color: $color-black;
 $base-font-color-inverse: $color-white;
@@ -17,7 +18,10 @@ $menu-color-link: $color-white;
 $menu-color-link-active: $color-white;
 $font-color-h1: $color-white;
 
+$border-color: $color-red;
+
 $page-width: 1920px;
+$page-layout-width: 1170px;
 $base-url: './../img/';
 
 

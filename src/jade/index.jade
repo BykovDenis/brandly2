@@ -29,6 +29,33 @@ html(lang="en")
               p.slide__row2 Up to 60% discount on new arrivals
               p.slide__row3 TRENDING NEW ITEMS,FROM CREATORS AROUND THE WORLD
               a.slide__btn(href="/") Shop now
-        .main__layout
+          .slider__controls
+            input#slide1.slider__control(type="radio" name="slider")
+            label.slider__label(for="slide1") Slide1
+            input#slide2.slider__control(type="radio" name="slider")
+            label.slider__label(for="slide2") Slide2
+            input#slide3.slider__control(type="radio" name="slider" checked)
+            label.slider__label(for="slide3") Slide3
+            input#slide4.slider__control(type="radio" name="slider")
+            label.slider__label(for="slide4") Slide4
+        section.latest
+          .latest__layout
+            h2.latest__title Latest Products
+            ul.latest__items
+              li.latest__item
+                a.latest__lnk(href="#" aria-label="Men") Men
+                  img.latest__img(src="img/img-men.jpg" width="370" height="418" alt="the men")
+              li.latest__item
+                a.latest__lnk(href="#" aria-label="Woman")
+                  img.latest__img(src="img/img-woman.jpg" width="370" height="418" alt="the woman")
+              li.latest__item
+                a.latest__lnk(href="#" aria-label="Watches")
+                  img.latest__img(src="img/img-watches.jpg" width="370" height="418" alt="the watches")
+              li.latest__item
+                a.latest__lnk(href="#" aria-label="40% Off New Autumn Collection")
+                  img.latest__img(src="img/img-40percent-off.jpg" width="570" height="418" alt="40 percent off")
+              li.latest__item
+                a.latest__lnk(href="#" aria-label="MEGA SALE ON ITEMS FROM SPIRIT COLLECTION")
+                  img.latest__img(src="img/img-megasale.jpg" width="570" height="418" alt="40 percent off")
       footer.main-footer
         .main-footer__layout
