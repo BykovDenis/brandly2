@@ -8,6 +8,8 @@
 @import './blocks/slider';
 @import './blocks/slide';
 @import './blocks/latest';
+@import './blocks/tranding';
+@import './blocks/tranding-slider';
 
 body {
   font-family: $font-opensans;
@@ -31,6 +33,7 @@ a {
     url($base-url + 'img-40percent-off.jpg'),
     url($base-url + 'img-megasale.jpg'),
     url($base-url + 'img-woman.jpg'),
-    url($base-url + 'img-watches.jpg')
+    url($base-url + 'img-watches.jpg'),
+    url($base-url + 'img-goods.jpg'),
     url($base-url + 'img-men.jpg');
 }
