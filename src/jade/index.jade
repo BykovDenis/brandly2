@@ -74,7 +74,7 @@ html(lang="en")
                 p.tranding-slider__description With this jacket,Nathan Stewart sunglasses go hand in hand!
                 ul.tranding-slider__sizes
                   li.tranding-slider__size
-                    a(href="#") ML
+                    a(href="#") M
                   li.tranding-slider__size.tranding-slider__size--active
                     a(href="#") L
                   li.tranding-slider__size
@@ -98,6 +98,8 @@ html(lang="en")
           .blog__layout
             h2.blog__title From The Blog
           section.blog-slider
+            a(href="").blog-slider__control.blog-slider__control--left
+              img(src="img/icon-arrow.png" width="28" height="49" alt="previous")
             .blog-slider__layout
               .blog-slide
                 img.blog-slide__img(src="img/img-blog1.jpg" width="570" height="400" alt="GERMAN FASHION WIZARDS")
@@ -117,8 +119,8 @@ html(lang="en")
                   I was watching her create in her small studio in London and i was amazed at how every
                   little detail gets included in her creaions. From frames,to glass thickness she blew me away...
                 a.blog-slide__btn(href="#") Read more
-            .blog-slider__control.blog-slider__control--left
-            .blog-slider__control.blog-slider__control--right
+            a(href="").blog-slider__control.blog-slider__control--right
+              img(src="img/icon-arrow.png" width="28" height="49" alt="next")
         section.subscribe
           form.subscribe__layout(method="post" action="/")
             label#email.subscribe__title SUBSCRIBE TO OUR NEWSLETTER TO RECEIVE LATEST NEWS AND OFFERS
