@@ -2,7 +2,7 @@
   position: relative;
   min-height: 250px;
   width: 100%;
-  background: $color-gray url($base-url + 'bg-subscribe.jpg') 0 0 no-repeat;
+  background: $color-gray url($base-url + 'bg-subscribe.jpg') 50% 0 no-repeat;
   &::before {
     position: absolute;
     top: 0;
