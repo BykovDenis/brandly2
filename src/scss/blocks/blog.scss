@@ -1,0 +1,10 @@
+.blog {
+  margin-bottom: 60px;
+  &__layout {
+    @include wrapper;
+    text-align: center;
+  }
+  &__title {
+    @include styles-h2;
+  }
+}

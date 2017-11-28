@@ -22,7 +22,7 @@ html(lang="en")
             li.main-nav__item
               a.main-nav__lnk(href="#") Contact
       main.main
-        .slider
+        section.slider
           .slide
             .slide__card
               p.slide__row1 Spring / Summer Collection
@@ -59,7 +59,7 @@ html(lang="en")
                   img.latest__img(src="img/img-megasale.jpg" width="570" height="418" alt="40 percent off")
         section.tranding
           h2.tranding__title Trending Items
-          .tranding-slider
+          section.tranding-slider
             .tranding-slider__slide
               img.tranding-slider__img(src="img/img-goods.jpg" width="570" height="570" alt="NATHAN STEWART JACKET")
               .tranding-slider__card
@@ -94,7 +94,35 @@ html(lang="en")
               label.tranding-slider__label(for="slide7") Slide7
               input#slide8.tranding-slider__control(type="radio" name="tranding-slider")
               label.tranding-slider__label(for="slide8") Slide8
-FASHION TIP:
-With this jacket,Nathan Stewart sunglasses go hand in hand!
+        section.blog
+          .blog__layout
+            h2.blog__title From The Blog
+          section.blog-slider
+            .blog-slider__layout
+              .blog-slide
+                img.blog-slide__img(src="img/img-blog1.jpg" width="570" height="400" alt="GERMAN FASHION WIZARDS")
+                h3.blog-slide__title GERMAN FASHION WIZARDS
+                p.blog-slide__topic By James Steed   |   Fashion
+                p.blog-slide__description.
+                  This week we had the chance of interviewing two creative artists from Germany.
+                  These guys are simply amazing at what they do with the European fashion scene and
+                  this year at Paris Fashion Week they introduced their new collection.
+                a.blog-slide__btn(href="#") Read more
+              .blog-slide
+                img.blog-slide__img(src="img/img-blog2.jpg" width="570" height="400" alt="ANNE STEWART’S SUNGLASSES")
+                h3.blog-slide__title ANNE STEWART’S SUNGLASSES
+                p.blog-slide__topic By Marry Beard   |   Trending
+                p.blog-slide__description.
+                  Just amazing! That is how i can describe this person. So creative,so inspiring.
+                  I was watching her create in her small studio in London and i was amazed at how every
+                  little detail gets included in her creaions. From frames,to glass thickness she blew me away...
+                a.blog-slide__btn(href="#") Read more
+            .blog-slider__control.blog-slider__control--left
+            .blog-slider__control.blog-slider__control--right
+        section.subscribe
+          form.subscribe__layout(method="post" action="/")
+            label#email.subscribe__title SUBSCRIBE TO OUR NEWSLETTER TO RECEIVE LATEST NEWS AND OFFERS
+            p.subscribe__item
+              input.subscribe__input(type="text" id="email" value="EMAIL ADDRESS")
+              button.subscribe__btn(type="submit") Subscribe
       footer.main-footer
-        .main-footer__layout
