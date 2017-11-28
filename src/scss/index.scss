@@ -3,21 +3,45 @@
 @import './fonts';
 @import './mixins';
 
+@import './blocks/main-header';
+@import './blocks/main-nav';
+@import './blocks/slider';
+@import './blocks/slide';
+@import './blocks/latest';
+@import './blocks/tranding';
+@import './blocks/tranding-slider';
+@import './blocks/blog';
+@import './blocks/blog-slider';
+@import './blocks/blog-slide';
+@import './blocks/subscribe';
+@import './blocks/main-footer';
+
 body {
-  font-family: $font-PlayfairDisplay;
+  font-family: $font-opensans;
   font-size: $base-font-size;
   color: $base-font-color;
+  width: 100%;
 }
 
 a {
-  font-family: $font-PlayfairDisplay;
+  font-family: $font-opensans;
   font-size: $base-font-size;
   color: $base-font-color;
   text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .fake {
-  background-image: url($base-url + 'img-logo.png'),
-    url($base-url + 'icon-cup-coffee.png'),
-    url($base-url + 'image-brendan-lim.png');
+  background-image: url($base-url + 'icon-logo.png'),
+    url($base-url + 'img-40percent-off.jpg'),
+    url($base-url + 'img-megasale.jpg'),
+    url($base-url + 'img-woman.jpg'),
+    url($base-url + 'img-watches.jpg'),
+    url($base-url + 'img-goods.jpg'),
+    url($base-url + 'img-blog1.jpg'),
+    url($base-url + 'icon-arrow.png'),
+    url($base-url + 'img-blog2.jpg'),
+    url($base-url + 'img-men.jpg');
 }

@@ -1,29 +1,31 @@
 /* Определяем цвета */
 
-$color-black-dark: #000000;
-$color-black: #28211f;
+$color-gray: #97989d;
+$color-light-gray: #777777;
+$color-light-gray1: #afafaf;
+$color-light-gray2: #ecf0f1;
+$color-dark-black: #000000;
+$color-black: #333333;
 $color-white: #ffffff;
-$color-brown: #6a0d00;
-$color-brown-dark: #39312f;
-$color-yellow: #f5d76e;
-$color-gray: #2f2f2f;
+$color-blue: #222533;
+$color-red: #dc0000;
 
 $font-opensans: 'Open Sans', sans-serif;
-$font-PlayfairDisplay: 'PlayfairDisplay', 'Times New Roman', sans-serif;
-$font-Lato: 'Lato', Arial, sans-serif;
-$base-font-size: 14px;
+$font-lato: 'Lato', Arial, sans-serif;
+$base-font-size: 18px;
 $font-size-h1: 48px;
-$font-size-h2: 32px;
-$font-size-h3: 20px;
+$font-size-h2: 40px;
+$font-size-h3: 30px;
 $base-font-color: $color-black;
 $base-font-color-inverse: $color-white;
 $menu-color-link: $color-white;
-$menu-color-link-active: $color-yellow;
-$font-color-h1: $color-yellow;
+$menu-color-link-active: $color-white;
+$font-color-h1: $color-white;
 
-$bg-color-slider: $color-brown-dark;
+$border-color: $color-red;
 
-$page-width: 1300px;
+$page-width: 1920px;
+$page-layout-width: 1170px;
 $base-url: './../img/';
 
 

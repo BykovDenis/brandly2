@@ -1,0 +1,9 @@
+.tranding {
+  width: 100%;
+  min-height: 920px;
+  background: url($base-url + 'bg-tranding.jpg') 0 0 no-repeat;
+  text-align: center;
+  &__title {
+    @include styles-h2;
+  }
+}

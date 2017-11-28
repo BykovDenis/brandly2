@@ -1,0 +1,29 @@
+.blog-slider {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  &__layout {
+    width: $page-layout-width;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__control {
+    display: block;
+    &--right {
+      transform: rotate(180deg);
+      margin-left: 100px;
+    }
+    &--left {
+      margin-right: 100px;
+    }
+    &:hover {
+      opacity: .7;
+    }
+  }
+}

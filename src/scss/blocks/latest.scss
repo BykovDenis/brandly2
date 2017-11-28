@@ -1,0 +1,109 @@
+.latest {
+  &__title {
+    @include styles-h2;
+  }
+  &__layout {
+    @include wrapper;
+    text-align: center;
+  }
+  &__lnk {
+    position: relative;
+    display: block;
+    font-size: 0;
+    &::before {
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      z-index: 2;
+      top: 30px;
+      left: 30px;
+      right: 30px;
+      bottom: 30px;
+      content: attr(aria-label);
+      color: $base-font-color-inverse;
+      font-style: italic;
+      font-weight: 100;
+      border: 3px solid $base-font-color-inverse;
+      font-size: $font-size-h2;
+    }
+    &:hover::before {
+      filter: drop-shadow(0 2px 2px rgba(0, 0, 0, .4));
+    }
+  }
+  &__items {
+    margin: 0;
+    margin-bottom: 60px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    position: relative;
+    margin-bottom: 30px;
+    &:nth-of-type(4),
+    &:nth-of-type(5) {
+      margin-bottom: 0;
+    }
+    &::after {
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $color-blue;
+      content: '';
+      opacity: .7;
+    }
+    &:hover::after {
+      opacity: 0;
+    }
+  }
+  &__item:nth-of-type(4) &__lnk::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 90px;
+    font-family: $font-lato;
+    content: attr(aria-label);
+    font-size: 45px;
+    font-weight: 900;
+    font-style: normal;
+    border: none;
+  }
+  &__item:nth-of-type(4) &__lnk::after,
+  &__item:last-of-type &__lnk::after {
+    position: absolute;
+    z-index: 2;
+    top: 119px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    width: 190px;
+    height: 180px;
+    border-top: 1px solid $base-font-color-inverse;
+    border-bottom: 1px solid $base-font-color-inverse;
+  }
+  &__item:last-of-type &__lnk::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 50px;
+    font-family: $font-lato;
+    content: attr(aria-label);
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 900;
+    font-style: normal;
+    border: none;
+  }
+}
